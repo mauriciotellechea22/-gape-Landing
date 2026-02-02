@@ -35,7 +35,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
             particleCount: 100,
             spread: 70,
             origin: { y: 0.6 },
-            colors: ['#EFC038', '#A8659F', '#8CAA7E', '#8B0000'] // Yellow, Purple, Green, Red
+            colors: ['#f4cc44', '#9e5f85', '#7CA35C', '#a40404'] // Saffron Yellow, Strikemaster Purple, Asparagus Green, Bright Red
         });
 
         // Generate WhatsApp link
