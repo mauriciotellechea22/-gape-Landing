@@ -210,6 +210,13 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                     />
                                 </div>
 
+                                {/* Delivery Notice */}
+                                <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3 rounded-r-lg">
+                                    <p className="text-sm text-gray-700 font-rounded">
+                                        <span className="font-semibold">📦 Reparto:</span> Todos los pedidos se entregan en <span className="font-semibold">horario matutino</span>.
+                                    </p>
+                                </div>
+
                                 <Button
                                     onClick={handleCheckout}
                                     className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg font-rounded font-bold shadow-xl hover:shadow-2xl transition-all h-14"

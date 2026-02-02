@@ -36,7 +36,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
             whileHover={{ y: -8 }}
         >
             <Card className="overflow-hidden h-full flex flex-col bg-white border-green-200 shadow-md hover:shadow-xl transition-all duration-300">
-                <div className="relative h-64 w-full overflow-hidden bg-purple-50">
+                <div className="relative h-48 md:h-56 lg:h-64 w-full overflow-hidden bg-purple-50">
                     <Image
                         src={product.image}
                         alt={product.name}
@@ -47,7 +47,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
                 </div>
 
                 <CardHeader>
-                    <CardTitle className="text-2xl text-purple-700 font-handwritten">{product.name}</CardTitle>
+                    <CardTitle className="text-xl md:text-2xl text-purple-700 font-handwritten">{product.name}</CardTitle>
                     <CardDescription className="text-gray-600 font-rounded">
                         {product.description}
                     </CardDescription>
@@ -55,7 +55,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
 
                 <CardContent className="flex-grow">
                     <div className="flex items-baseline gap-2">
-                        <p className="text-3xl font-bold text-purple-600">
+                        <p className="text-2xl md:text-3xl font-bold text-purple-600">
                             ${product.price}
                         </p>
                         {product.priceNote && (

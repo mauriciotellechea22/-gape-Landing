@@ -20,7 +20,7 @@ export const products: Product[] = [
     {
         id: 'granola',
         name: 'Granola Casera "Crunchy"',
-        description: 'Horneada lentamente con miel, coco en escamas y lluvia de frutos secos.',
+        description: 'Horneada lentamente con miel, coco en escamas y lluvia de frutos secos. Disponible para stock.',
         price: 350,
         image: '/images/products/granola.jpg',
         priceNote: 'Paquete 500g'
@@ -28,7 +28,7 @@ export const products: Product[] = [
     {
         id: 'chipa',
         name: 'Chipás de Queso',
-        description: 'La receta clásica: explosión de queso, crocantes por fuera y nube por dentro.',
+        description: 'Congelados o recién horneados. Bandejas de 8 o 12 unidades. Encargo con 24hs de anticipación.',
         price: 420,
         image: '/images/products/chipa.jpg',
         priceNote: 'x Docena'
@@ -36,9 +36,17 @@ export const products: Product[] = [
     {
         id: 'scones',
         name: 'Scones de la Tarde',
-        description: 'Masa tierna y mantecosa, ideales para acompañar el mate o el té.',
+        description: 'Masa tierna y mantecosa, ideales para acompañar el mate o el té. Encargo con 24hs de anticipación.',
         price: 380,
         image: '/images/products/scones.jpg',
         priceNote: 'x Docena'
+    },
+    {
+        id: 'alfajores',
+        name: 'Alfajores Saludables',
+        description: 'Deliciosos alfajores artesanales con dulce de leche casero. Perfectos para endulzar tu día.',
+        price: 120,
+        image: '/images/products/alfajores.jpg',
+        priceNote: 'x 3 unidades'
     }
 ];

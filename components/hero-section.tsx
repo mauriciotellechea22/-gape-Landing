@@ -37,13 +37,13 @@ export function HeroSection() {
                             width={300}
                             height={100}
                             priority
-                            className="w-auto h-24 md:h-32"
+                            className="w-auto h-16 md:h-24 lg:h-32"
                         />
                     </motion.div>
 
                     {/* ⚠️ TODO: Update with actual brand messaging */}
                     <motion.h1
-                        className="text-5xl md:text-6xl lg:text-7xl font-bold text-purple-700 mb-6 leading-tight font-handwritten"
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-700 mb-4 md:mb-6 leading-tight font-handwritten"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
@@ -54,7 +54,7 @@ export function HeroSection() {
                     </motion.h1>
 
                     <motion.p
-                        className="text-xl md:text-2xl text-gray-700 mb-12 font-rounded font-light max-w-2xl mx-auto"
+                        className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-8 md:mb-12 font-rounded font-light max-w-2xl mx-auto"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.8 }}
@@ -70,7 +70,7 @@ export function HeroSection() {
                         <Button
                             size="lg"
                             onClick={scrollToProducts}
-                            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-8 py-6 text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
                         >
                             Ver Menú
                             <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
