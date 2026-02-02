@@ -56,9 +56,9 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
 
     return (
         <Sheet open={open} onOpenChange={onOpenChange}>
-            <SheetContent className="w-full sm:max-w-lg bg-white overflow-y-auto border-l-4 border-purple-500">
+            <SheetContent className="w-full sm:max-w-lg bg-white overflow-y-auto border-l-4 border-agape-purple">
                 <SheetHeader className="border-b pb-4 mb-6">
-                    <SheetTitle className="text-4xl font-handwritten text-purple-700">
+                    <SheetTitle className="text-4xl font-handwritten text-agape-purple">
                         Tu Carrito
                     </SheetTitle>
                     <SheetDescription className="text-gray-600 font-rounded text-base">
@@ -92,7 +92,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                             initial={{ opacity: 0, x: -20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             exit={{ opacity: 0, x: 20 }}
-                                            className="bg-gradient-to-br from-purple-50 to-green-50 rounded-xl p-4 shadow-sm border border-purple-200"
+                                            className="bg-gradient-to-br from-agape-purple-50 to-agape-green-50 rounded-xl p-4 shadow-sm border border-agape-purple-200"
                                         >
                                             <div className="flex gap-4">
                                                 <div className="relative w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-white shadow-sm">
@@ -106,10 +106,10 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                                 </div>
 
                                                 <div className="flex-grow min-w-0">
-                                                    <h3 className="font-handwritten text-xl text-purple-800 mb-1 truncate">
+                                                    <h3 className="font-handwritten text-xl text-agape-purple mb-1 truncate">
                                                         {item.product.name}
                                                     </h3>
-                                                    <p className="text-green-700 font-bold font-rounded text-lg">
+                                                    <p className="text-agape-green font-bold font-rounded text-lg">
                                                         ${item.product.price} c/u
                                                     </p>
 
@@ -118,9 +118,9 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                                             size="sm"
                                                             variant="outline"
                                                             onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
-                                                            className="h-9 w-9 p-0 border-2 border-purple-300 hover:bg-purple-100 rounded-lg"
+                                                            className="h-9 w-9 p-0 border-2 border-agape-purple-300 hover:bg-agape-purple-100 rounded-lg"
                                                         >
-                                                            <Minus className="w-4 h-4 text-purple-700" />
+                                                            <Minus className="w-4 h-4 text-agape-purple" />
                                                         </Button>
 
                                                         <span className="w-12 text-center font-rounded font-bold text-lg text-gray-800">
@@ -131,23 +131,23 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                                             size="sm"
                                                             variant="outline"
                                                             onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
-                                                            className="h-9 w-9 p-0 border-2 border-purple-300 hover:bg-purple-100 rounded-lg"
+                                                            className="h-9 w-9 p-0 border-2 border-agape-purple-300 hover:bg-agape-purple-100 rounded-lg"
                                                         >
-                                                            <Plus className="w-4 h-4 text-purple-700" />
+                                                            <Plus className="w-4 h-4 text-agape-purple" />
                                                         </Button>
 
                                                         <Button
                                                             size="sm"
                                                             variant="ghost"
                                                             onClick={() => removeItem(item.product.id)}
-                                                            className="h-9 w-9 p-0 ml-auto text-red-600 hover:text-red-700 hover:bg-red-50 rounded-lg"
+                                                            className="h-9 w-9 p-0 ml-auto text-agape-red hover:text-agape-red-800 hover:bg-agape-red-50 rounded-lg"
                                                         >
                                                             <Trash2 className="w-4 h-4" />
                                                         </Button>
                                                     </div>
                                                 </div>
 
-                                                <div className="text-right font-bold text-xl text-purple-700 font-rounded">
+                                                <div className="text-right font-bold text-xl text-agape-purple font-rounded">
                                                     ${item.product.price * item.quantity}
                                                 </div>
                                             </div>
@@ -156,17 +156,17 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                 </AnimatePresence>
                             </div>
 
-                            <Separator className="bg-purple-200" />
+                            <Separator className="bg-agape-purple-200" />
 
                             {/* Total */}
-                            <div className="bg-gradient-to-r from-purple-100 to-green-100 rounded-xl p-4 border-2 border-purple-300">
+                            <div className="bg-gradient-to-r from-agape-purple-100 to-agape-green-100 rounded-xl p-4 border-2 border-agape-purple-300">
                                 <div className="flex justify-between items-center">
-                                    <span className="text-2xl font-handwritten text-purple-800">Total:</span>
-                                    <span className="text-3xl text-purple-700 font-bold font-rounded">${total()}</span>
+                                    <span className="text-2xl font-handwritten text-agape-purple">Total:</span>
+                                    <span className="text-3xl text-agape-purple font-bold font-rounded">${total()}</span>
                                 </div>
                             </div>
 
-                            <Separator className="bg-purple-200" />
+                            <Separator className="bg-agape-purple-200" />
 
                             {/* Checkout Form */}
                             <div className="space-y-4">
@@ -179,7 +179,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         placeholder="Ej: María González"
-                                        className="text-base border-2 border-gray-300 focus:border-purple-500 focus:ring-purple-500 bg-white h-12 font-rounded text-gray-800 placeholder:text-gray-400"
+                                        className="text-base border-2 border-gray-300 focus:border-agape-purple focus:ring-agape-purple bg-white h-12 font-rounded text-gray-800 placeholder:text-gray-400"
                                     />
                                 </div>
 
@@ -192,7 +192,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                         value={address}
                                         onChange={(e) => setAddress(e.target.value)}
                                         placeholder="Ej: Av. Italia 2583"
-                                        className="text-base border-2 border-gray-300 focus:border-purple-500 focus:ring-purple-500 bg-white h-12 font-rounded text-gray-800 placeholder:text-gray-400"
+                                        className="text-base border-2 border-gray-300 focus:border-agape-purple focus:ring-agape-purple bg-white h-12 font-rounded text-gray-800 placeholder:text-gray-400"
                                     />
                                 </div>
 
@@ -206,12 +206,12 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
                                         onChange={(e) => setNotes(e.target.value)}
                                         placeholder="Ej: Sin azúcar, alergia a los frutos secos, entregar después de las 15hs..."
                                         rows={3}
-                                        className="w-full text-base border-2 border-gray-300 focus:border-purple-500 focus:ring-purple-500 bg-white p-3 font-rounded text-gray-800 placeholder:text-gray-400 rounded-md resize-none"
+                                        className="w-full text-base border-2 border-gray-300 focus:border-agape-purple focus:ring-agape-purple bg-white p-3 font-rounded text-gray-800 placeholder:text-gray-400 rounded-md resize-none"
                                     />
                                 </div>
 
                                 {/* Delivery Notice */}
-                                <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3 rounded-r-lg">
+                                <div className="bg-agape-yellow-50 border-l-4 border-agape-yellow p-3 rounded-r-lg">
                                     <p className="text-sm text-gray-700 font-rounded">
                                         <span className="font-semibold">📦 Reparto:</span> Todos los pedidos se entregan en <span className="font-semibold">horario matutino</span>.
                                     </p>
@@ -219,7 +219,7 @@ export function CartSheet({ open, onOpenChange }: CartSheetProps) {
 
                                 <Button
                                     onClick={handleCheckout}
-                                    className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg font-rounded font-bold shadow-xl hover:shadow-2xl transition-all h-14"
+                                    className="w-full bg-agape-green hover:bg-agape-green-700 text-white py-6 text-lg font-rounded font-bold shadow-xl hover:shadow-2xl transition-all h-14"
                                     size="lg"
                                 >
                                     <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">

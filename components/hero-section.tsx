@@ -43,14 +43,14 @@ export function HeroSection() {
 
                     {/* ⚠️ TODO: Update with actual brand messaging */}
                     <motion.h1
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-purple-700 mb-4 md:mb-6 leading-tight font-handwritten"
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-agape-purple mb-4 md:mb-6 leading-tight font-handwritten"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
                     >
                         Cocina saludable
                         <br />
-                        <span className="text-green-600">hecha con amor</span>
+                        <span className="text-agape-green">hecha con amor</span>
                     </motion.h1>
 
                     <motion.p
@@ -70,7 +70,7 @@ export function HeroSection() {
                         <Button
                             size="lg"
                             onClick={scrollToProducts}
-                            className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                            className="bg-agape-yellow hover:bg-agape-yellow-600 text-gray-900 px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
                         >
                             Ver Menú
                             <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
@@ -85,7 +85,7 @@ export function HeroSection() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             >
-                <ArrowDown className="w-6 h-6 text-purple-600 opacity-50" />
+                <ArrowDown className="w-6 h-6 text-agape-purple opacity-50" />
             </motion.div>
         </section>
     );

@@ -38,7 +38,7 @@ export function FloatingCartButton({ onClick }: FloatingCartButtonProps) {
                 <Button
                     onClick={onClick}
                     size="lg"
-                    className="h-16 w-16 rounded-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 shadow-2xl hover:shadow-3xl relative group"
+                    className="h-16 w-16 rounded-full bg-agape-yellow hover:bg-agape-yellow-600 text-gray-900 shadow-2xl hover:shadow-3xl relative group"
                 >
                     <ShoppingBag className="w-7 h-7" />
 
@@ -50,7 +50,7 @@ export function FloatingCartButton({ onClick }: FloatingCartButtonProps) {
                                 exit={{ scale: 0 }}
                                 className="absolute -top-2 -right-2"
                             >
-                                <Badge className="h-7 w-7 flex items-center justify-center bg-red-700 text-white border-2 border-white rounded-full p-0 font-bold font-rounded">
+                                <Badge className="h-7 w-7 flex items-center justify-center bg-agape-red text-white border-2 border-white rounded-full p-0 font-bold font-rounded">
                                     {itemCount}
                                 </Badge>
                             </motion.div>

@@ -32,10 +32,10 @@ export default function Home() {
           <h3 className="text-3xl font-handwritten mb-4">
             ágape
           </h3>
-          <p className="text-green-100 font-rounded mb-6">
+          <p className="text-agape-green-100 font-rounded mb-6">
             Cocina saludable hecha con amor
           </p>
-          <p className="text-sm text-purple-200 font-rounded">
+          <p className="text-sm text-agape-purple-200 font-rounded">
             © {new Date().getFullYear()} Ágape Cocina Saludable • Todos los derechos reservados
           </p>
         </div>

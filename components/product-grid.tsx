@@ -15,10 +15,10 @@ export function ProductGrid() {
                     transition={{ duration: 0.6 }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-5xl md:text-6xl font-bold text-purple-700 mb-4 font-handwritten">
+                    <h2 className="text-5xl md:text-6xl font-bold text-agape-purple mb-4 font-handwritten">
                         Nuestros Productos
                     </h2>
-                    <p className="text-xl text-green-700 font-rounded font-light max-w-2xl mx-auto">
+                    <p className="text-xl text-agape-green font-rounded font-light max-w-2xl mx-auto">
                         Cada producto es elaborado con dedicación y los mejores ingredientes naturales
                     </p>
                 </motion.div>

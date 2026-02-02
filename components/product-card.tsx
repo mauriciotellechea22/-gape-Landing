@@ -35,8 +35,8 @@ export function ProductCard({ product, index }: ProductCardProps) {
             transition={{ delay: index * 0.1, duration: 0.5 }}
             whileHover={{ y: -8 }}
         >
-            <Card className="overflow-hidden h-full flex flex-col bg-white border-green-200 shadow-md hover:shadow-xl transition-all duration-300">
-                <div className="relative h-48 md:h-56 lg:h-64 w-full overflow-hidden bg-purple-50">
+            <Card className="overflow-hidden h-full flex flex-col bg-white border-agape-green-200 shadow-md hover:shadow-xl transition-all duration-300">
+                <div className="relative h-48 md:h-56 lg:h-64 w-full overflow-hidden bg-agape-purple-50">
                     <Image
                         src={product.image}
                         alt={product.name}
@@ -47,7 +47,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
                 </div>
 
                 <CardHeader>
-                    <CardTitle className="text-xl md:text-2xl text-purple-700 font-handwritten">{product.name}</CardTitle>
+                    <CardTitle className="text-xl md:text-2xl text-agape-purple font-handwritten">{product.name}</CardTitle>
                     <CardDescription className="text-gray-600 font-rounded">
                         {product.description}
                     </CardDescription>
@@ -55,11 +55,11 @@ export function ProductCard({ product, index }: ProductCardProps) {
 
                 <CardContent className="flex-grow">
                     <div className="flex items-baseline gap-2">
-                        <p className="text-2xl md:text-3xl font-bold text-purple-600">
+                        <p className="text-2xl md:text-3xl font-bold text-agape-purple">
                             ${product.price}
                         </p>
                         {product.priceNote && (
-                            <span className="text-sm text-green-600 font-rounded">
+                            <span className="text-sm text-agape-green font-rounded">
                                 {product.priceNote}
                             </span>
                         )}
@@ -74,7 +74,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
                     >
                         <Button
                             onClick={handleAddToCart}
-                            className="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-rounded font-semibold shadow-md hover:shadow-lg transition-all"
+                            className="w-full bg-agape-yellow hover:bg-agape-yellow-600 text-gray-900 font-rounded font-semibold shadow-md hover:shadow-lg transition-all"
                             size="lg"
                         >
                             <ShoppingBag className="mr-2 w-5 h-5" />
