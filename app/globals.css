@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Nunito:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ágape color palette */
+    --color-yellow: 46 86% 58%;
+    /* #EFC038 - Lemon/Primary accent */
+    --color-purple: 326 27% 52%;
+    /* #A8659F - Beet/Brand primary */
+    --color-green: 106 21% 59%;
+    /* #8CAA7E - Leaf/Fresh */
+    --color-red: 0 100% 27%;
+    /* #8B0000 - Heart/Energy */
+    --color-cream: 0 0% 98%;
+    /* #FAFAFA - Clean background */
+
+    /* Shadcn theme variables mapped to ágape colors */
+    --background: var(--color-cream);
+    --foreground: 0 0% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    --primary: var(--color-purple);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--color-green);
+    --secondary-foreground: 0 0% 20%;
+    --muted: 106 21% 95%;
+    --muted-foreground: 106 10% 45%;
+    --accent: var(--color-yellow);
+    --accent-foreground: 0 0% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 106 15% 85%;
+    --input: 106 15% 85%;
+    --ring: var(--color-purple);
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-handwritten {
+    font-family: 'Caveat', cursive;
+  }
+
+  .font-rounded {
+    font-family: 'Nunito', sans-serif;
+  }
+}
