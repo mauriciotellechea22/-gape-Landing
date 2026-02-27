@@ -41,16 +41,16 @@ export function HeroSection() {
                         />
                     </motion.div>
 
-                    {/* ⚠️ TODO: Update with actual brand messaging */}
+                    {/* Main Title */}
                     <motion.h1
                         className="text-4xl md:text-5xl lg:text-6xl font-bold text-agape-purple mb-4 md:mb-6 leading-tight font-handwritten"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
                     >
-                        Cocina saludable
+                        Cocina Agapé
                         <br />
-                        <span className="text-agape-green">hecha con amor</span>
+                        <span className="text-agape-green">Comida hecha con amor, para compartir.</span>
                     </motion.h1>
 
                     <motion.p
@@ -59,21 +59,42 @@ export function HeroSection() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 0.8 }}
                     >
-                        Ingredientes naturales, recetas creativas, y el sabor de lo auténtico
+                        Elaboraciones artesanales, dulces y saladas. Opciones tradicionales y veganas. Pedidos con anticipación mínima de 24 hs.
                     </motion.p>
 
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.7, duration: 0.5 }}
+                        className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4"
                     >
                         <Button
                             size="lg"
-                            onClick={scrollToProducts}
-                            className="bg-agape-yellow hover:bg-agape-yellow-600 text-gray-900 px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                            onClick={() => {
+                                document.getElementById('packs')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                            className="w-full sm:w-auto bg-agape-yellow hover:bg-agape-yellow-600 text-gray-900 px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
                         >
-                            Ver Menú
-                            <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                            👉 Ver Packs
+                        </Button>
+                        <Button
+                            size="lg"
+                            onClick={scrollToProducts}
+                            className="w-full sm:w-auto bg-agape-green hover:bg-agape-green-600 text-white px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                        >
+                            👉 Ver Productos
+                        </Button>
+                        <Button
+                            size="lg"
+                            className="w-full sm:w-auto bg-agape-purple hover:bg-agape-purple-600 text-white px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                        >
+                            👉 Pedir por WhatsApp
+                        </Button>
+                        <Button
+                            size="lg"
+                            className="w-full sm:w-auto bg-blue-500 hover:bg-blue-600 text-white px-6 py-4 md:px-8 md:py-6 text-base md:text-lg font-rounded font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+                        >
+                            👉 Pagar con Mercado Pago
                         </Button>
                     </motion.div>
                 </motion.div>
